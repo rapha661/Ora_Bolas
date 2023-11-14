@@ -53,10 +53,8 @@ var j = 0;
 
 // x inicial e y inicial do robo
 function iniciarPrograma(){
-    // let x = parseFloat(document.getElementById("XInicialRobo").value);
-    // let y = parseFloat(document.getElementById("YInicialRobo").value);
-    let x = 0;
-    let y = 0;
+    let x = parseFloat(document.getElementById("XInicialRobo").value);
+    let y = parseFloat(document.getElementById("YInicialRobo").value);
     // adicionando o x e o y nos vetores posições:
     roboX.push(x);
     roboY.push(y);
@@ -151,17 +149,6 @@ function iniciarPrograma(){
 
 }
 
-iniciarPrograma();
-
-    for (let i = 0; i < vetorForcaXbola.length; i++) {
-        console.log("Seno:" + sin[i])
-        console.log("Cosseno:" + cos[i])
-        console.log("Aceleração:" + parseFloat(aceleracaoRobo[i]))
-        console.log("Força bola x:" + vetorForcaXbola[i])
-        console.log("Força bola y:" + vetorForcaYbola[i])
-        console.log("Força robo x:" + vetorForcaXrobo[i])
-        console.log("Força robo y:" + vetorForcaYrobo[i])
-    }
 // ------------------------INICIO DA PROGRAMAÇÃO PARA OS GRÁFICOS------------------ //
 
 
