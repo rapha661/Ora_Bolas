@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Ora Bolas</title>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo">Ora Bolas</h1>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="sobre" class="mamama">Sobre o projeto</a></li>
+                <li><a href="grafico" class="mamama">Gráficos</a></li>
+                <li><a href="informacoes" class="mamama">Informações gerais</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="overlay">
+        <a class="close">&times;</a>
+        <div class="overlay__content">
+            <a href="sobre" class="mamama">Sobre o projeto</a>
+            <a href="graficos" class="mamama">Gráficos</a>
+            <a href="informacoes" class="mamama">Informações gerais</a>
+        </div>
+    </div>
+    
+    <section id="sobre" class="introducao">
+        <h2 class="titulo">Sobre o projeto</h2>
+        <h3 class="subtitulo">Descrição do projeto</h3>
+        <p class="texto">O projeto Ora Bolas consiste na junção e demonstração dos conhecimentos 
+            em programação e física adquiridos, não só no segundo semestre, mas ao longo do primeiro 
+            ano do curso de Ciência da Computação. Para tal feito, o objetivo principal é programar 
+            um robô para interceptar uma bola, sendo a posição inicial do robô aleatoriamente 
+            escolhida, dentro da distância de 1 metro em relação a bola. Dito isso, para realizar 
+            o projeto, nos foram previamente dados as informações da trajetória da bola, como o 
+            tempo e sua posição, velocidade e aceleração em X e Y. Também tínhamos as dimensões do 
+            campo de futebol de robôs usado, o peso, aceleração, velocidade e diâmetro do robô 
+            escolhido pelo grupo, o small-size. Além do que foi proposto, no nosso aprofundamento 
+            decidimos fornecer as informações da força resultante da bola e do robô ao longo de 
+            ambas as trajetórias. Ao final, após fazer o código e todos os cálculos físicos 
+            necessários , nesta página estamos mostrando os resultados finais do trabalho e os 
+            dados gerados da força e da interceptação nos gráficos.
+            </p>
+
+            <h3 class="subtitulo">Sobre a física do projeto</h3>
+            <p class="texto">O programa recebe como entrada a posição inicial do robô em 
+                X e em Y. A partir disso, é possível saber a distância entre o robô e a bola 
+                por meio da distância de ponto. Além disso, o programa precisa da aceleração 
+                que foi adotada como 2,8m/s2 e a velocidade a qual é obtida pela multiplicação 
+                entre a aceleração e o tempo. Outras informações necessárias são o cosseno e seno 
+                do ângulo entre a distância robô-bola e a distância em x entre robô e bola. Ou seja, 
+                para obter o cosseno precisa dividir a distância X entre robô e bola pela distância 
+                robô-bola, mas para saber o seno é preciso dividir a distância Y entre robô e bola 
+                pela distância robô-bola. Com essas informações, o programa calcula a posição 
+                futura do robô através da soma entre a posição atual com a componente da velocidade. 
+                No momento em que a bola atingir o raio de interceptação, o programa para de fazer 
+                os calculos.</p>
+    </section>
+
+    <section id="graficos">
+        <h2 class="titulo">Gráfico</h2>
+        <h3 class="subtitulo">Trajetória XY</h3>
+        <div id="Trajetoria_XY"></div>
+        
+        <h3 class="subtitulo">Robo e bola</h3>
+        <div id="x_roboEbola"></div>
+        
+        <h3 class="subtitulo">robo e bola</h3>
+        <div id="y_roboEbola"></div>
+        
+        <h3 class="subtitulo">vx robo e bola</h3>
+        <div id="vx_roboEbola"></div>
+        
+        <h3 class="subtitulo">vy robo e bola</h3>
+        <div id="vy_roboEbola"></div>
+        
+        <h3 class="subtitulo">ax robo e bola</h3>
+        <div id="ax_roboEbola"></div>
+        
+        <h3 class="subtitulo">ay robo e bola</h3>
+        <div id="ay_roboEbola"></div>
+
+        <h3 class="subtitulo">distancia relativa robo</h3>
+        <div id = "distanciaRelativaRobo"></div>
+        
+        <h3 class="subtitulo">força robo e bola</h3>
+        <div id="xy_forcaRoboeBola"></div>
+
+        <h3 class="subtitulo">xt força robo e bola</h3>
+        <div id="yt_forcaRoboeBola"></div>
+    </section>
+
+    <section id="informacoes">
+
+        <h2 class="titulo">Informações gerais</h2>
+        <div>
+                <div>
+                    <h2 class="subtitulo">Informações sobre o robo:</h2>
+                    <div class="texto" id="aceleracaoRobo"></div>
+                    <div class="texto" id="velocidadeMax" type="text"></div>
+                    <div class="texto" id="massaRobo" type="text"></div>
+                </div>
+                <br><br>
+                <div>
+                    <h3 class="subtitulo">Posição da bola no momento da interceptação:</h3><br>
+                    <p>
+                        <div class="texto" id="vetorBolaXIntercept" type="text"></div>
+                    </p>
+                    <p>
+                        <div class="texto" id="vetorBolaYIntercept" type="text"></div>
+                    </p>
+                </div>
+                <br><br>
+                <div>
+                    <h3 class="subtitulo">Posição do robo no momento da interceptação:</h3><br>
+                    <p> 
+                        <div class="texto" id="roboXIntercept" type="text"></div>
+                    </p>
+                    <p> 
+                        <div class="texto" id="roboYIntercept" type="text"></div>
+                    </p>
+                </div>
+                <br><br>
+                <div>
+                    <h3 class="subtitulo">Velocidade da bola no momento da interceptação:</h3><br>
+                    <p>
+                        <div class="texto" id="velocidadeXBolaIntercept" type="text"></div>
+                    </p>
+                    <p> 
+                        <div class="texto" id="velocidadeYBolaIntercept" type="text"></div>
+                    </p>
+                </div>
+                <br><br>
+                <div>
+                    <h3 class="subtitulo">Velocidade do robo no momento da interceptação:</h3><br>
+                    <p> 
+                        <div class="texto" id="velocidadeRoboXIntercept" type="text"></div>
+                    </p>
+                    <p> 
+                        <div class="texto" id="velocidadeRoboYIntercept" type="text"></div>
+                    </p>
+                </div>
+                <br><br>
+                <div>
+                    <h3 class="subtitulo">Distância percorrida pelo Robo até o momento da interceptação:</h3><br>
+                    <p> 
+                        <div class="texto" id="distanciaRoboX" type="text"></div>
+                    </p>
+                    <p> 
+                        <div class="texto" id="distanciaRoboY" type="text"></div>
+                    </p>
+                </div>
+                <br><br>
+                <div>
+                    <h3 class="subtitulo">Distância percorrida pela bola até o momento da interceptação:</h3><br>
+                    <p> 
+                        <div class="texto" id="distanciaBolaX" type="text"></div>
+                    </p>
+                    <p> 
+                        <div class="texto" id="distanciaBolaY" type="text"></div>
+                    </p>
+                </div>
+                <br><br>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

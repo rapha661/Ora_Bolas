@@ -17,9 +17,9 @@
         <h1 class="logo">Ora Bolas</h1>
         <nav>
             <ul class="nav__links">
-                <li><a href="sobre" class="mamama">Sobre o projeto</a></li>
-                <li><a href="grafico" class="mamama">Gráficos</a></li>
-                <li><a href="informacoes" class="mamama">Informações gerais</a></li>
+                <li><a href="#sobre" class="mamama">Sobre o projeto</a></li>
+                <li><a href="#graf" class="mamama">Gráficos</a></li>
+                <li><a href="#informacao" class="mamama">Informações gerais</a></li>
             </ul>
         </nav>
     </header>
@@ -65,114 +65,152 @@
                 os calculos.</p>
     </section>
 
-    <section id="graficos">
-        <h2 class="titulo">Gráfico</h2>
-        <h3 class="subtitulo">Trajetória XY</h3>
-        <div id="Trajetoria_XY"></div>
-        
-        <h3 class="subtitulo">Robo e bola</h3>
-        <div id="x_roboEbola"></div>
-        
-        <h3 class="subtitulo">robo e bola</h3>
-        <div id="y_roboEbola"></div>
-        
-        <h3 class="subtitulo">vx robo e bola</h3>
-        <div id="vx_roboEbola"></div>
-        
-        <h3 class="subtitulo">vy robo e bola</h3>
-        <div id="vy_roboEbola"></div>
-        
-        <h3 class="subtitulo">ax robo e bola</h3>
-        <div id="ax_roboEbola"></div>
-        
-        <h3 class="subtitulo">ay robo e bola</h3>
-        <div id="ay_roboEbola"></div>
+    <section id="graf">
+        <h2 class="titulo">Gráficos</h2>
 
-        <h3 class="subtitulo">distancia relativa robo</h3>
-        <div id = "distanciaRelativaRobo"></div>
+        <h3 class="subtitulo">Trajetória feita pelo robô e a bola em X por Y</h3>
+        <div class="canva_graf" id="Trajetoria_XY"></div>
         
-        <h3 class="subtitulo">força robo e bola</h3>
-        <div id="xy_forcaRoboeBola"></div>
+        <h3 class="subtitulo">Posições em X do robô e da bola pelo tempo (t)</h3>
+        <div class="canva_graf"  id="x_roboEbola"></div>
+        
+        <h3 class="subtitulo">Posições em Y do robô e da bola pelo tempo (t)</h3>
+        <div class="canva_graf"  id="y_roboEbola"></div>
+        
+        <h3 class="subtitulo">Velocidade em x (xy) do robô e da bola pelo tempo (t)</h3>
+        <div class="canva_graf" id="vx_roboEbola"></div>
+        
+        <h3 class="subtitulo">Velocidade em y (vy) do robô e da bola pelo tempo (t)</h3>
+        <div class="canva_graf"  id="vy_roboEbola"></div>
+        
+        <h3 class="subtitulo">Aceleração em x (ax) do robô e da bola pelo tempo (t)</h3>
+        <div class="canva_graf"  id="ax_roboEbola"></div>
+        
+        <h3 class="subtitulo">Aceleração em y (ay) do robô e da bola pelo tempo (t)</h3>
+        <div class="canva_graf"  id="ay_roboEbola"></div>
 
-        <h3 class="subtitulo">xt força robo e bola</h3>
-        <div id="yt_forcaRoboeBola"></div>
+        <h3 class="subtitulo">Distância relativa do robô em relação à bola</h3>
+        <div class="canva_graf"  id = "distanciaRelativaRobo"></div>
+
+        <h2 class="titulo">Gráficos do aprofundamento</h2>
+        <h3 class="subtitulo">Força resultante do robô e da bola em X pelo tempo</h3>
+        <div class="canva_graf"  id="xt_forcaRoboeBola"></div>
+
+        <h3 class="subtitulo">Força resultante do robô e da bola em Y pelo tempo</h3>
+        <div class="canva_graf"  id="yt_forcaRoboeBola"></div>
     </section>
 
-    <section id="informacoes">
+    <section id="informacao">
 
         <h2 class="titulo">Informações gerais</h2>
         <div>
-                <div>
-                    <h2 class="subtitulo">Informações sobre o robo:</h2>
-                    <div class="texto" id="aceleracaoRobo"></div>
-                    <div class="texto" id="velocidadeMax" type="text"></div>
-                    <div class="texto" id="massaRobo" type="text"></div>
-                </div>
-                <br><br>
-                <div>
-                    <h3 class="subtitulo">Posição da bola no momento da interceptação:</h3><br>
-                    <p>
-                        <div class="texto" id="vetorBolaXIntercept" type="text"></div>
-                    </p>
-                    <p>
-                        <div class="texto" id="vetorBolaYIntercept" type="text"></div>
-                    </p>
-                </div>
-                <br><br>
-                <div>
-                    <h3 class="subtitulo">Posição do robo no momento da interceptação:</h3><br>
-                    <p> 
-                        <div class="texto" id="roboXIntercept" type="text"></div>
-                    </p>
-                    <p> 
-                        <div class="texto" id="roboYIntercept" type="text"></div>
-                    </p>
-                </div>
-                <br><br>
-                <div>
-                    <h3 class="subtitulo">Velocidade da bola no momento da interceptação:</h3><br>
-                    <p>
-                        <div class="texto" id="velocidadeXBolaIntercept" type="text"></div>
-                    </p>
-                    <p> 
-                        <div class="texto" id="velocidadeYBolaIntercept" type="text"></div>
-                    </p>
-                </div>
-                <br><br>
-                <div>
-                    <h3 class="subtitulo">Velocidade do robo no momento da interceptação:</h3><br>
-                    <p> 
-                        <div class="texto" id="velocidadeRoboXIntercept" type="text"></div>
-                    </p>
-                    <p> 
-                        <div class="texto" id="velocidadeRoboYIntercept" type="text"></div>
-                    </p>
-                </div>
-                <br><br>
-                <div>
-                    <h3 class="subtitulo">Distância percorrida pelo Robo até o momento da interceptação:</h3><br>
-                    <p> 
-                        <div class="texto" id="distanciaRoboX" type="text"></div>
-                    </p>
-                    <p> 
-                        <div class="texto" id="distanciaRoboY" type="text"></div>
-                    </p>
-                </div>
-                <br><br>
-                <div>
-                    <h3 class="subtitulo">Distância percorrida pela bola até o momento da interceptação:</h3><br>
-                    <p> 
-                        <div class="texto" id="distanciaBolaX" type="text"></div>
-                    </p>
-                    <p> 
-                        <div class="texto" id="distanciaBolaY" type="text"></div>
-                    </p>
-                </div>
-                <br><br>
+            <div> 
+                <h3 class="subtitulo"> Tempo de interceptação do robô e da bola </h3> <br>
+                <p>
+                    <div class="texto" id = "intercept" type = "text"></div>
+                </p> 
+            
             </div>
+            <br><br>
+            <div>
+                <h2 class="subtitulo">Informações sobre o robo:</h2>
+                <div class="texto" id="aceleracaoRobo"></div>
+                <div class="texto" id="velocidadeMax" type="text"></div>
+                <div class="texto" id="massaRobo" type="text"></div>
+            </div>
+            <br><br>
+            <div>
+                <h3 class="subtitulo">Posição da bola no momento da interceptação:</h3><br>
+                <p>
+                    <div class="texto" id="vetorBolaXIntercept" type="text"></div>
+                </p>
+                <p>
+                    <div class="texto" id="vetorBolaYIntercept" type="text"></div>
+                </p>
+            </div>
+            <br><br>
+            <div>
+                <h3 class="subtitulo">Posição do robo no momento da interceptação:</h3><br>
+                <p> 
+                    <div class="texto" id="roboXIntercept" type="text"></div>
+                </p>
+                <p> 
+                    <div class="texto" id="roboYIntercept" type="text"></div>
+                </p>
+            </div>
+            <br><br>
+            <div>
+                <h3 class="subtitulo">Velocidade da bola no momento da interceptação:</h3><br>
+                <p>
+                    <div class="texto" id="velocidadeXBolaIntercept" type="text"></div>
+                </p>
+                <p> 
+                    <div class="texto" id="velocidadeYBolaIntercept" type="text"></div>
+                </p>
+            </div>
+            <br><br>
+            <div>
+                <h3 class="subtitulo">Velocidade do robo no momento da interceptação:</h3><br>
+                <p> 
+                    <div class="texto" id="velocidadeRoboXIntercept" type="text"></div>
+                </p>
+                <p> 
+                    <div class="texto" id="velocidadeRoboYIntercept" type="text"></div>
+                </p>
+            </div>
+            <br><br>
+            <div>
+                <h3 class="subtitulo">Distância percorrida pelo Robo até o momento da interceptação:</h3><br>
+                <p> 
+                    <div class="texto" id="distanciaRoboX" type="text"></div>
+                </p>
+                <p> 
+                    <div class="texto" id="distanciaRoboY" type="text"></div>
+                </p>
+            </div>
+            <br><br>
+            <div>
+                <h3 class="subtitulo">Distância percorrida pela bola até o momento da interceptação:</h3><br>
+                <p> 
+                    <div class="texto" id="distanciaBolaX" type="text"></div>
+                </p>
+                <p> 
+                    <div class="texto" id="distanciaBolaY" type="text"></div>
+                </p>
+                
+            </div>
+            <br><br>
+            <div>
+                <h3 class="subtitulo">Aceleração da bola até a interceptação:</h3><br>
+                <p> 
+                    <div class="texto" id="aceleracaoXBola" type="text"></div>
+                </p>
+                <p> 
+                    <div class="texto" id="aceleracaoYBola" type="text"></div>
+                </p>
+                
+            </div>                
+            <br><br>
+            <div>
+                <h2 class="subtitulo">Informações sobre aprofundamento:</h2><br>
+                <h3 class="subtitulo2">Aceleração da bola até a interceptação:</h3><br>
+                <p> 
+                    <div class="texto" id="ForcaXRobo" type="text"></div>
+                </p>
+                <p> 
+                    <div class="texto" id="ForcaYRobo" type="text"></div>
+                </p>
+                <p> 
+                    <div class="texto" id="ForcaXBola" type="text"></div>
+                </p>
+                <p> 
+                    <div class="texto" id="ForcaYBola" type="text"></div>
+                </p>
+                
+            </div>                
+            <br><br>
         </div>
     </section>
-
 
     <script src="main.js"></script>
 </body>

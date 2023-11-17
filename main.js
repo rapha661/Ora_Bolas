@@ -7,9 +7,12 @@ vetorBolaX = ['1', '1.01000004', '1.02000032', '1.03000108', '1.04000256', '1.05
 vetorBolaY = ['0.5', '0.517992', '0.535968', '0.553928', '0.571872', '0.5898', '0.607712', '0.625608', '0.643488', '0.661352', '0.6792', '0.697032', '0.714848', '0.732648', '0.750432', '0.7682', '0.785952', '0.803688', '0.821408', '0.839112', '0.8568', '0.874472', '0.892128', '0.909768', '0.927392', '0.945', '0.962592', '0.980168', '0.997728', '1.015272', '1.0328', '1.050312', '1.067808', '1.085288', '1.102752', '1.1202', '1.137632', '1.155048', '1.172448', '1.189832', '1.2072', '1.224552', '1.241888', '1.259208', '1.276512', '1.2938', '1.311072', '1.328328', '1.345568', '1.362792', '1.38', '1.397192', '1.414368', '1.431528', '1.448672', '1.4658', '1.482912', '1.500008', '1.517088', '1.534152', '1.5512', '1.568232', '1.585248', '1.602248', '1.619232', '1.6362', '1.653152', '1.670088', '1.687008', '1.703912', '1.7208', '1.737672', '1.754528', '1.771368', '1.788192', '1.805', '1.821792', '1.838568', '1.855328', '1.872072', '1.8888', '1.905512', '1.922208', '1.938888', '1.955552', '1.9722', '1.988832', '2.005448', '2.022048', '2.038632', '2.0552', '2.071752', '2.088288', '2.104808', '2.121312', '2.1378', '2.154272', '2.170728', '2.187168', '2.203592', '2.22', '2.236392', '2.252768', '2.269128', '2.285472', '2.3018', '2.318112', '2.334408', '2.350688', '2.366952', '2.3832', '2.399432', '2.415648', '2.431848', '2.448032', '2.4642', '2.480352', '2.496488', '2.512608', '2.528712', '2.5448', '2.560872', '2.576928', '2.592968', '2.608992', '2.625', '2.640992', '2.656968', '2.672928', '2.688872', '2.7048', '2.720712', '2.736608', '2.752488', '2.768352', '2.7842', '2.800032', '2.815848', '2.831648', '2.847432', '2.8632', '2.878952', '2.894688', '2.910408', '2.926112', '2.9418', '2.957472', '2.973128', '2.988768', '3.004392', '3.02', '3.035592', '3.051168', '3.066728', '3.082272', '3.0978', '3.113312', '3.128808', '3.144288', '3.159752', '3.1752', '3.190632', '3.206048', '3.221448', '3.236832', '3.2522', '3.267552', '3.282888', '3.298208', '3.313512', '3.3288', '3.344072', '3.359328', '3.374568', '3.389792', '3.405', '3.420192', '3.435368', '3.450528', '3.465672', '3.4808', '3.495912', '3.511008', '3.526088', '3.541152', '3.5562', '3.571232', '3.586248', '3.601248', '3.616232', '3.6312', '3.646152', '3.661088', '3.676008', '3.690912', '3.7058', '3.720672', '3.735528', '3.750368', '3.765192', '3.78', '3.794792', '3.809568', '3.824328', '3.839072', '3.8538', '3.868512', '3.883208', '3.897888', '3.912552', '3.9272', '3.941832', '3.956448', '3.971048', '3.985632', '4.0002', '4.014752', '4.029288', '4.043808', '4.058312', '4.0728', '4.087272', '4.101728', '4.116168', '4.130592', '4.145', '4.159392', '4.173768', '4.188128', '4.202472', '4.2168', '4.231112', '4.245408', '4.259688', '4.273952', '4.2882', '4.302432', '4.316648', '4.330848', '4.345032', '4.3592', '4.373352', '4.387488', '4.401608', '4.415712', '4.4298', '4.443872', '4.457928', '4.471968', '4.485992', '4.5', '4.513992', '4.527968', '4.541928', '4.555872', '4.5698', '4.583712', '4.597608', '4.611488', '4.625352', '4.6392', '4.653032', '4.666848', '4.680648', '4.694432', '4.7082', '4.721952', '4.735688', '4.749408', '4.763112', '4.7768', '4.790472', '4.804128', '4.817768', '4.831392', '4.845', '4.858592', '4.872168', '4.885728', '4.899272', '4.9128', '4.926312', '4.939808', '4.953288', '4.966752', '4.9802', '4.993632', '5.007048', '5.020448', '5.033832', '5.0472', '5.060552', '5.073888', '5.087208', '5.100512', '5.1138', '5.127072', '5.140328', '5.153568', '5.166792', '5.18', '5.193192', '5.206368', '5.219528', '5.232672', '5.2458', '5.258912', '5.272008', '5.285088', '5.298152', '5.3112', '5.324232', '5.337248', '5.350248', '5.363232', '5.3762', '5.389152', '5.402088', '5.415008', '5.427912', '5.4408', '5.453672', '5.466528', '5.479368', '5.492192', '5.505', '5.517792', '5.530568', '5.543328', '5.556072', '5.5688', '5.581512', '5.594208', '5.606888', '5.619552', '5.6322', '5.644832', '5.657448', '5.670048', '5.682632', '5.6952', '5.707752', '5.720288', '5.732808', '5.745312', '5.7578', '5.770272', '5.782728', '5.795168', '5.807592', '5.82', '5.832392', '5.844768', '5.857128', '5.869472', '5.8818', '5.894112', '5.906408', '5.918688', '5.930952', '5.9432', '5.955432', '5.967648', '5.979848', '5.992032']
 
 //Velocidades
-veloBolaX = 0,
-veloBolaY = 0,
+veloBolaX = [],
+veloBolaY = [],
+veloBola = [],
 veloRobo = [],
+veloRoboX = [], 
+veloRoboY = [],
 
 //Aceleracao e Desaceleracao
 aceleracaoBolaX = [],
@@ -110,10 +113,17 @@ var j = 0;
                 (parseFloat(vetorBolaY[i]) - roboY[i]) / (distancia[i])
             )
         );
+
+        // calcula a velocidade em x e y do robo e da bola 
+        veloRoboX.push(veloRobo[i]*(cos[i]));
+        veloRoboY.push(veloRobo[i]*(sin[i]));
+        veloBolaX.push(aceleracaoBolaX[i]*vetorTempo[i]);
+        veloBolaY.push(aceleracaoBolaY[i]*vetorTempo[i]);
+
         // calcula a posicao futura do robo em cada componente 
         roboX[i + 1] = parseFloat(
             roboX[i] + (veloRobo[i]*(cos[i]*0.05)) // ponto x futuro do robô
-        );
+        );                         
         roboY[i + 1] = parseFloat(
             roboY[i] + (veloRobo[i]*(sin[i]*0.05)) // ponto y futuro do robô
         );
@@ -148,7 +158,7 @@ var j = 0;
 
     };
 
-
+// Loop para percorrer o vetor de tempo
 
 
 
@@ -172,98 +182,101 @@ var j = 0;
 
 
 // ------------------------INICIO DA PROGRAMAÇÃO PARA OS GRÁFICOS------------------ //
+
+
 // cria os gráficos de acordo com o movimento do robo e da bola com os seus arrays 
 
     // cria o gráfico de posicao do robo
-    var trajetoriaRxy= {
-        x: roboX,
-        y: roboY,
-        mode: 'lines+markers',
-        name: 'Trajetoria feita pelo robô',
-        line: {
-            color: '#6495ED',
-            width: 1
-        }
-    };
-
-    var trajetoriaBinterxy = {
-        x: vetorBolainterceptacaoX,
-        y: vetorBolainterceptacaoY,
-        mode: 'lines+markers',
-        name: 'Trajetoria feita pela bola',
-        line: {
-            color: '#FF7F50',
-            width: 1
-        }
-    };
-
-    var data = [  trajetoriaRxy, trajetoriaBinterxy];
-
-    var layout = {
-        title:'Trajetoria Feita Pelo Robô e a Bola em X por Y '
-    };
-
-    Plotly.newPlot('Trajetoria_XY', data, layout);
-    // componente x da posicao do robo pelo tempo
-    var xt_robo = {
-        x: vetorTempo,
-        y: roboX,
-        mode: 'lines+markers',
-        name: 'X por tempo robô',
-        line: {
-            color: '#6495ED',
-            width: 1
-        }
-    };
-    var xt_bola= {
-        x: vetorTempo,
-        y: vetorBolainterceptacaoX,
-        mode: 'lines+markers',
-        name: 'X por tempo bola',
-        line: {
-            color: '#FF7F50',
-            width: 1
-        }
-    };
-
-    var data = [xt_robo, xt_bola];
-    var layout = {
-        title: 'Posições em X do Robô e da Bola Pelo Tempo (t)'
-    };
-    Plotly.newPlot('x_roboEbola', data, layout);
-
-    // componente y da posicao do robo pelo tempo
-    var yt_robo = {
-        x: vetorTempo,
-        y: roboY,
-        mode: 'lines+markers',
-        name: 'Y por tempo robô',
-        line: {
-            color: '#6495ED',
-            width: 1
-        }
-    };
-    var yt_bola = {
-        x: vetorTempo,
-        y: vetorBolainterceptacaoY,
-        mode: 'lines+markers',
-        name: 'Y por tempo robô',
-        line: {
-            color: '#FF7F50',
-            width: 1
-        }
-    };
-
-    var data = [yt_robo, yt_bola];
-    var layout = {
-        title: 'Posições em Y do Robô e da Bola Pelo Tempo (t)'
-    };
-    Plotly.newPlot('y_roboEbola', data, layout);
+      
+        var trajetoriaRxy= {
+            x: roboX ,
+            y: roboY,
+            mode: 'lines+markers',
+            name: 'Trajetoria feita pelo robô',
+            line: {
+                color: '#6495ED',
+                width: 2
+            }
+        };
+    
+        var trajetoriaBinterxy = {
+            x: vetorBolaX,
+            y: vetorBolaY,
+            mode: 'lines+markers',
+            name: 'Trajetoria feita pela bola',
+            line: {
+                color: '#FF7F50',
+                width: 1
+            }
+        };
+    
+        var data = [ trajetoriaRxy, trajetoriaBinterxy];
+    
+        var layout = {
+            title:'Trajetoria Feita Pelo Robô e a Bola em X por Y '
+        };
+    
+        Plotly.newPlot('Trajetoria_XY', data, layout);
+        // componente x da posicao do robo pelo tempo
+        var xt_robo = {
+            x: vetorTempo,
+            y: roboX ,
+            mode: 'lines+markers',
+            name: 'X por tempo robô',
+            line: {
+                color: '#6495ED',
+                width: 1
+            }
+        };
+        var xt_bola= {
+            x: vetorTempo,
+            y: vetorBolaX,
+            mode: 'lines+markers',
+            name: 'X por tempo bola',
+            line: {
+                color: '#FF7F50',
+                width: 1
+            }
+        };
+    
+        var data = [xt_robo, xt_bola];
+        var layout = {
+            title: 'Posições em X do Robô e da Bola Pelo Tempo (t)'
+        };
+        Plotly.newPlot('x_roboEbola', data, layout);
+    
+        // componente y da posicao do robo pelo tempo
+        var yt_robo = {
+            x: vetorTempo,
+            y: roboY,
+            mode: 'lines+markers',
+            name: 'Y por tempo robô',
+            line: {
+                color: '#6495ED',
+                width: 1
+            }
+        };
+        var yt_bola = {
+            x: vetorTempo,
+            y: vetorBolaY,
+            mode: 'lines+markers',
+            name: 'Y por tempo robô',
+            line: {
+                color: '#FF7F50',
+                width: 1
+            }
+        };
+    
+        var data = [yt_robo, yt_bola];
+        var layout = {
+            title: 'Posições em Y do Robô e da Bola Pelo Tempo (t)'
+        };
+        Plotly.newPlot('y_roboEbola', data, layout);
 
     // componente x da velocidade do robo pelo tempo
     var vx_robo = {
         x: vetorTempo,
-        y: veloRobo,
+        y: veloRoboX,
         mode: 'lines+markers',
         name: 'vx por tempo  robô',
         line: {
@@ -290,7 +303,7 @@ var j = 0;
     // componente y da velocidade do robo pelo tempo
     var vy_robo = {
         x: vetorTempo,
-        y: veloRobo,
+        y: veloRoboY,
         mode: 'lines+markers',
         name: 'vx por tempo  robô',
         line: {
@@ -367,72 +380,119 @@ var j = 0;
     };
     Plotly.newPlot('ay_roboEbola', data, layout);
 
-    var ForcaRobo = {
-        x: vetorForcaXrobo,
-        y: vetorForcaYrobo,
+    var ForcaRoboXT = {
+        x: vetorTempo,
+        y: vetorForcaXrobo,
         mode: 'lines+markers',
-        name: 'Força Res do robô em x/y',
+        name: 'Força Res em x do robô por tempo',
         line: {
             color: '#6495ED',
             width: 1
         }
     }
-    var ForcaBola = {
-        x: vetorForcaXbola,
-        y: vetorForcaYbola,
+    var ForcaBolaXT = {
+        x: vetorTempo,
+        y: vetorForcaXbola,
         mode: 'lines+markers',
-        name: 'Força Res do robô em x/y',
+        name: 'Força Res em x da bola por tempo',
         line: {
             color: '#FF7F50',
             width: 1
         }
     }
-    var data = [ForcaRobo, ForcaBola];
+    var data = [ForcaRoboXT, ForcaBolaXT];
     var layout = {
-        title: 'Força Resultante do Robô e da Bola em X e Y'
+        title: 'Força Resultante do Robô e da Bola em X pelo tempo'
     };
-    Plotly.newPlot('xy_forcaRoboeBola', data, layout);
+    Plotly.newPlot('xt_forcaRoboeBola', data, layout);
 
 
 
+var ForcaRoboYT = {
+    x: vetorTempo,
+    y: vetorForcaYrobo,
+    mode: 'lines+markers',
+    name: 'Força Res em y do robô por tempo',
+    line: {
+        color: '#6495ED',
+        width: 1
+    }
+}
+var ForcaBolaYT = {
+    x: vetorTempo,
+    y: vetorForcaYbola,
+    mode: 'lines+markers',
+    name: 'Força Res em y da bola por tempo',
+    line: {
+        color: '#FF7F50',
+        width: 1
+    }
+}
+var data = [ForcaRoboYT, ForcaBolaYT];
+var layout = {
+    title: 'Força Resultante do Robô e da Bola em Y pelo tempo'
+};
+Plotly.newPlot('yt_forcaRoboeBola', data, layout);
+
+
+var distRelativa_robo = {
+    x: vetorTempo,
+    y: distancia,
+    mode: 'lines+markers',
+    name: 'Distancia relativa',
+    line: {
+        color: '#6495ED',
+        width: 1
+    }
+};
+
+
+var data = [distRelativa_robo];
+var layout = {
+    title: 'Distância relativa do robo em relação a bola pelo tempo'
+};
+Plotly.newPlot('distanciaRelativaRobo', data, layout);
+
+
+// --------------------------------------------------------------------------------------- //
 
 // ------------------------INFORMAÇÕES QUE SERÃO EXIBIDAS NA TELA------------------ //
 
-    document.getElementById("aceleracaoRobo").innerHTML ="Aceleração = "+ aceleracao + " m/s²";      //
-    document.getElementById("velocidadeMax").innerHTML ="Velocidade máxima = "+ veloMaxima + " m/s"; // Exibe a aceleração, velocidade e massa do robô
-    document.getElementById("massaRobo").innerHTML ="Massa = " +2.2 + " kg";                         //
+document.getElementById("aceleracaoRobo").innerHTML ="Aceleração = "+ aceleracao + " m/s²";      //
+document.getElementById("velocidadeMax").innerHTML ="Velocidade máxima = "+ veloMaxima + " m/s"; // Exibe a aceleração, velocidade e massa do robô
+document.getElementById("massaRobo").innerHTML ="Massa = " +2.2 + " kg";                         //
 
-    document.getElementById("vetorBolaXIntercept").innerHTML ="x = "+ vetorBolaX[j] + " m"; //
-    document.getElementById("vetorBolaYIntercept").innerHTML ="y = "+ vetorBolaY[j] + " m"; // Exibe a posição do momento da interceptação
-    document.getElementById("roboXIntercept").innerHTML ="x = "+ roboX[j] + " m";           //
-    document.getElementById("roboYIntercept").innerHTML ="y = "+ roboY[j] + " m";           //
+document.getElementById("vetorBolaXIntercept").innerHTML ="x = "+ vetorBolaX[j] + " m"; //
+document.getElementById("vetorBolaYIntercept").innerHTML ="y = "+ vetorBolaY[j] + " m"; // Exibe a posição do momento da interceptação
+document.getElementById("roboXIntercept").innerHTML ="x = "+ roboX[j] + " m";           //
+document.getElementById("roboYIntercept").innerHTML ="y = "+ roboY[j] + " m";           //
 
-    document.getElementById("velocidadeXBolaIntercept").innerHTML ="vx = " +veloBolaX[j] + " m/s";                        //
-    document.getElementById("velocidadeYBolaIntercept").innerHTML ="vy = " +veloBolaY[j] + " m/s";                        // Exibe velocidade da bola e do robô do momento da interceptação 
-    document.getElementById("velocidadeRoboXIntercept").innerHTML ="vx = "+ (roboX[j]-roboX[j-1])/(cos[j]*0.05) + " m/s"; //
-    document.getElementById("velocidadeRoboYIntercept").innerHTML ="vy = "+ (roboY[j]-roboY[j-1])/(sin[j]*0.05) + " m/s"; //
+document.getElementById("velocidadeXBolaIntercept").innerHTML ="vx = " +veloBolaX[j] + " m/s";
+document.getElementById("velocidadeYBolaIntercept").innerHTML ="vy = " +veloBolaY[j] + " m/s";  // Exibe velocidade da bola e do robô do momento da interceptação 
+document.getElementById("velocidadeRoboXIntercept").innerHTML ="vx = "+ (roboX[j]-roboX[j-1])/(cos[j]*0.05) + " m/s"; 
+document.getElementById("velocidadeRoboYIntercept").innerHTML ="vy = "+ (roboY[j]-roboY[j-1])/(sin[j]*0.05) + " m/s"; 
 
-    document.getElementById("aceleracaoXBola").innerHTML ="ax = "+ aceleracaoXBola + " m/s²"; //
-    document.getElementById("aceleracaoYBola").innerHTML ="ay = "+ aceleracaoYBola + " m/s²"; // Exibe a aceleração da bola em x e y
-    
-    let RX = Math.abs(roboX[j] - roboX[0]);
-    let RY = Math.abs(roboY[j] - roboY[0]);
-    document.getElementById("distanciaRoboX").innerHTML ="dx = "+ RX + " m"; // 
-    document.getElementById("distanciaRoboY").innerHTML ="dy = "+ RY + " m"; // Exibe a distância percorrida pelo robô em x e y
+document.getElementById("aceleracaoXBola").innerHTML ="ax = "+ aceleracaoXBola + " m/s²"; //
+document.getElementById("aceleracaoYBola").innerHTML ="ay = "+ aceleracaoYBola + " m/s²"; // Exibe a aceleração da bola em x e y
 
-    document.getElementById("distanciaBolaX").innerHTML ="dx = "+ Math.abs(vetorBolaX[j] - vetorBolaX[0]) + " m"; //
-    document.getElementById("distanciaBolaY").innerHTML ="dy = "+ Math.abs(vetorBolaY[j] - vetorBolaY[0]) + " m"; // Exibe a distância percorrida pela bola em x e y
+let RX = parseFloat(roboX[j]) - parseFloat(roboX[0]);
+let RY = parseFloat(roboY[j]) - parseFloat(roboY[0]);
 
-    document.getElementById("intercept").innerHTML ="O tempo de interceptação foi de "+"<b class = 'orange'>"+ tempoInterceptacao +"<b/>"+" segundos!"; // Exibe o tempo que aconteceu a interceptação
+document.getElementById("distanciaRoboX").innerHTML = "dx = " + RX + " m";
+document.getElementById("distanciaRoboY").innerHTML = "dy = " + RY + " m";
+
+document.getElementById("distanciaBolaX").innerHTML = "dx = " + Math.abs(vetorBolaX[j] - vetorBolaX[0]) + " m";
+document.getElementById("distanciaBolaY").innerHTML = "dy = " + Math.abs(vetorBolaY[j] - vetorBolaY[0]) + " m";
+
+document.getElementById("intercept").innerHTML = "O tempo de interceptação foi de " + "<b class='orange'>" + tempoInterceptacao + "</b>" + " segundos!";
+
+document.getElementById("ForcaXRobo").innerHTML = " Variação da força do robô, até o momento da interceptação, em X: " + parseFloat(vetorForcaXrobo[vetorForcaXrobo.length-1] - vetorForcaXrobo[0]) + "N"
+document.getElementById("ForcaYRobo").innerHTML = " Variação da força do robô, até o momento da interceptação, em Y: " + parseFloat(vetorForcaYrobo[vetorForcaYrobo.length-1] - vetorForcaYrobo[0]) + "N"
+document.getElementById("ForcaXBola").innerHTML = " Variação da força da bola, até o momento da interceptação, em X: " + parseFloat(vetorForcaXbola[vetorForcaXbola.length-1] - vetorForcaXbola[0]) + "N"
+document.getElementById("ForcaYBola").innerHTML = " Variação da força do bola, até o momento da interceptação, em Y: " + parseFloat(vetorForcaYbola[vetorForcaYbola.length-1] - vetorForcaYbola[0]) + "N"
 
 
 const selec = (el) => document.querySelector(el);
-
-
-    selec("#TempoInter").style.display = "block";
-    selec("#graphs").style.display = "block";
-    selec("#info").style.display = "flex";
-    selec("#graphs2").style.display ="block"
 
 
 const doc = document;
@@ -441,9 +501,9 @@ const menuClose = doc.querySelector(".close");
 const overlay = doc.querySelector(".overlay");
 
 
-  overlay.classList.add("overlay--active");
+overlay.classList.add("overlay--active");
 ;
 
 
-  overlay.classList.remove("overlay--active");
+overlay.classList.remove("overlay--active");
 ;
