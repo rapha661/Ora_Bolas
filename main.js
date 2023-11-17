@@ -1,3 +1,8 @@
+// DESENVOLVIDO POR:
+//Raphael Garavati Erbert, R.A: 22.123.014-7
+//Nathan Gabriel da Fonseca Leite, R.A: 22.123.028-7
+//Ana Carolina Lazzuri, R.A: 22.123.001-4
+
 // constantes do robo
 const Gravidade = -9.8,raioDeInterceptacao = 0.1115, veloMaxima = 2.8, aceleracao = 2.8, aceleracaoXBola = -0.5276, aceleracaoYBola = -0.4,Desaceleracao=(-2.8),veloMinima=0;
 
