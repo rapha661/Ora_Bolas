@@ -1,3 +1,263 @@
-.imagem_integrantes{
-    border-radius: 50px;
+/* VARIAVEL COR */
+
+:root {
+  --cor--bg: #f0f0e7;
+  --cor--verderdois: #004225;
+  --cor--verdeum: #cfeeac;
+  --cor--verdeheader: #4F6F52;
+  --cor--verdetres: #3A4D39;
+  --cor--verdequatro: #D2DE32;
+  --cor--azulum: #8ed0e7;
+  --cor--azuldois: rgba(0, 136, 169, 0.8);
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+body{
+  background-color: var(--cor--bg);
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: var(--cor--verdeheader);
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 30pt;
+  color: #edf0f1;
+}
+
+.nav__links a,
+.cta,
+.overlay__content a,
+.mamama {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18pt;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+}
+
+.nav__links li {
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  transition: color 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: var(--cor--verdeum);
+}
+
+/* Mobile Nav */
+
+.menu {
+  display: none;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: width 0.5s ease 0s;
+}
+
+.overlay--active {
+  width: 100%;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: color 0.3s ease 0s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: var(--cor--verdetres);
+}
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  color: #edf0f1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: initial;
+  }
+}
+
+
+/* GERAL */
+.titulo{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 26pt;
+  color: var(--cor--verdetres);
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.subtitulo{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 18pt;
+  margin-left: 3%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  color: var(--cor--verdetres);
+}
+
+.texto{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: var(--cor--verdetres);
+  font-size: 15pt;
+  text-align: justify;
+  margin-left: 4%;
+  margin-top:2%;
+  margin-right: 4%;
+  margin-bottom: 1%;
+}
+
+
+
+/* CSS PARA OS GRÁFICOS */
+.Trajetoria_XY{
+    display: block;
+}
+.x_roboEbola{
+    display: block;
+}
+.y_roboEbola{
+    display: block;
+}
+.vx_roboEbola{
+    display: block;
+}
+.vy_roboEbola{
+    display: block;
+}
+.ax_roboEbola{
+    display: block;
+}
+.ay_roboEbola{
+    display: block;
+}
+.xy_forcaRoboeBola{
+    display: block;
+}
+
+
+/* possivel css p gráfico */
+#graphs{
+  display: none;
+}
+#graphs2{
+  display: none;
+}
+
+.graf-section{
+  background-color: #D4F1F4;
+  padding: 2rem;
+  border-radius: 2rem;
+  text-align: left;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+.graf-title{
+  color: white;
+  background-color: #e6961e;
+  width: fit-content;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  text-align: center;
+  margin: 1rem auto;
+}
+.graf-subtitles{
+  font-size: 1.4rem;
+  text-align: center;
+}
+.graf-container{
+  display: grid;
+  margin: 2rem 0;
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
+}
+.graf-canvas{
+  border: 5px solid #000000;
+  border-radius: 5px;
+  transition: all 0.5s ease;
+}
+.graf-canvas:hover{
+  transform: scale(1.02);
+  border: 1px solid #00b3ff;
+  box-shadow: #00000091 10px 10px 10px;
+}
+.graficos{
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+#TempoInter{
+  height: 60vh;  
+  display: none; 
+}
+
+#info{
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.infos{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
