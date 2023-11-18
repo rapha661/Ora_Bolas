@@ -467,34 +467,34 @@ document.getElementById("aceleracaoRobo").innerHTML ="Aceleração = "+ acelerac
 document.getElementById("velocidadeMax").innerHTML ="Velocidade máxima = "+ veloMaxima + " m/s"; // Exibe a aceleração, velocidade e massa do robô
 document.getElementById("massaRobo").innerHTML ="Massa = " +2.2 + " kg";                         //
 
-document.getElementById("vetorBolaXIntercept").innerHTML ="x = "+ vetorBolaX[j] + " m"; //
-document.getElementById("vetorBolaYIntercept").innerHTML ="y = "+ vetorBolaY[j] + " m"; // Exibe a posição do momento da interceptação
-document.getElementById("roboXIntercept").innerHTML ="x = "+ roboX[j] + " m";           //
-document.getElementById("roboYIntercept").innerHTML ="y = "+ roboY[j] + " m";           //
+document.getElementById("vetorBolaXIntercept").innerHTML ="x = "+ Math.round(vetorBolaX[j]*100)/100 + " m"; //
+document.getElementById("vetorBolaYIntercept").innerHTML ="y = "+ Math.round(vetorBolaY[j]*100)/100 + " m"; // Exibe a posição do momento da interceptação
+document.getElementById("roboXIntercept").innerHTML ="x = "+ Math.round(roboX[j]*100)/100 + " m";           //
+document.getElementById("roboYIntercept").innerHTML ="y = "+ Math.round(roboY[j]*100)/100 + " m";           //
 
-document.getElementById("velocidadeXBolaIntercept").innerHTML ="vx = " +veloBolaX[j] + " m/s";
-document.getElementById("velocidadeYBolaIntercept").innerHTML ="vy = " +veloBolaY[j] + " m/s";  // Exibe velocidade da bola e do robô do momento da interceptação 
-document.getElementById("velocidadeRoboXIntercept").innerHTML ="vx = "+ (roboX[j]-roboX[j-1])/(cos[j]*0.05) + " m/s"; 
-document.getElementById("velocidadeRoboYIntercept").innerHTML ="vy = "+ (roboY[j]-roboY[j-1])/(sin[j]*0.05) + " m/s"; 
+document.getElementById("velocidadeXBolaIntercept").innerHTML ="vx = " +Math.round(veloBolaX[j]*100)/100 + " m/s";
+document.getElementById("velocidadeYBolaIntercept").innerHTML ="vy = " +Math.round(veloBolaY[j]*100)/100 + " m/s";  // Exibe velocidade da bola e do robô do momento da interceptação 
+document.getElementById("velocidadeRoboXIntercept").innerHTML ="vx = "+ Math.round((roboX[j]-roboX[j-1])/(cos[j]*0.05)*100)/100 + " m/s"; 
+document.getElementById("velocidadeRoboYIntercept").innerHTML ="vy = "+ Math.round((roboY[j]-roboY[j-1])/(sin[j]*0.05)*100)/100 + " m/s"; 
 
-document.getElementById("aceleracaoXBola").innerHTML ="ax = "+ aceleracaoXBola + " m/s²"; //
-document.getElementById("aceleracaoYBola").innerHTML ="ay = "+ aceleracaoYBola + " m/s²"; // Exibe a aceleração da bola em x e y
+document.getElementById("aceleracaoXBola").innerHTML ="ax = "+ Math.round(aceleracaoXBola*100)/100 + " m/s²"; //
+document.getElementById("aceleracaoYBola").innerHTML ="ay = "+ Math.round(aceleracaoYBola*100)/100 + " m/s²"; // Exibe a aceleração da bola em x e y
 
 let RX = parseFloat(roboX[j]) - parseFloat(roboX[0]);
 let RY = parseFloat(roboY[j]) - parseFloat(roboY[0]);
 
-document.getElementById("distanciaRoboX").innerHTML = "dx = " + RX + " m";
-document.getElementById("distanciaRoboY").innerHTML = "dy = " + RY + " m";
+document.getElementById("distanciaRoboX").innerHTML = "dx = " + Math.round(RX*100)/100 + " m";
+document.getElementById("distanciaRoboY").innerHTML = "dy = " + Math.round(RY*100)/100 + " m";
 
-document.getElementById("distanciaBolaX").innerHTML = "dx = " + Math.abs(vetorBolaX[j] - vetorBolaX[0]) + " m";
-document.getElementById("distanciaBolaY").innerHTML = "dy = " + Math.abs(vetorBolaY[j] - vetorBolaY[0]) + " m";
+document.getElementById("distanciaBolaX").innerHTML = "dx = " + Math.round(vetorBolaX[j] - vetorBolaX[0]*100)/100 + " m";
+document.getElementById("distanciaBolaY").innerHTML = "dy = " + Math.round(vetorBolaY[j] - vetorBolaY[0]*100)/100 + " m";
 
 document.getElementById("intercept").innerHTML = "O tempo de interceptação foi de " + "<b class='orange'>" + tempoInterceptacao + "</b>" + " segundos!";
 
-document.getElementById("ForcaXRobo").innerHTML = " Variação da força do robô, até o momento da interceptação, em X: " + parseFloat(vetorForcaXrobo[vetorForcaXrobo.length-1] - vetorForcaXrobo[0]) + "N"
-document.getElementById("ForcaYRobo").innerHTML = " Variação da força do robô, até o momento da interceptação, em Y: " + parseFloat(vetorForcaYrobo[vetorForcaYrobo.length-1] - vetorForcaYrobo[0]) + "N"
-document.getElementById("ForcaXBola").innerHTML = " Variação da força da bola, até o momento da interceptação, em X: " + parseFloat(vetorForcaXbola[vetorForcaXbola.length-1] - vetorForcaXbola[0]) + "N"
-document.getElementById("ForcaYBola").innerHTML = " Variação da força do bola, até o momento da interceptação, em Y: " + parseFloat(vetorForcaYbola[vetorForcaYbola.length-1] - vetorForcaYbola[0]) + "N"
+document.getElementById("ForcaXRobo").innerHTML = " Variação da força do robô, até o momento da interceptação, em X: " + Math.round(parseFloat(vetorForcaXrobo[vetorForcaXrobo.length-1] - vetorForcaXrobo[0])*100)/100 + "N"
+document.getElementById("ForcaYRobo").innerHTML = " Variação da força do robô, até o momento da interceptação, em Y: " + Math.round(parseFloat(vetorForcaYrobo[vetorForcaYrobo.length-1] - vetorForcaYrobo[0])*100)/100 + "N"
+document.getElementById("ForcaXBola").innerHTML = " Variação da força da bola, até o momento da interceptação, em X: " + Math.round(parseFloat(vetorForcaXbola[vetorForcaXbola.length-1] - vetorForcaXbola[0])*100)/100 + "N"
+document.getElementById("ForcaYBola").innerHTML = " Variação da força do bola, até o momento da interceptação, em Y: " + Math.round(parseFloat(vetorForcaYbola[vetorForcaYbola.length-1] - vetorForcaYbola[0])*100)/100 + "N"
 
 
 const selec = (el) => document.querySelector(el);
